@@ -69,6 +69,7 @@ class CompanyApiTest implements Service {
     private RoleManager roleManager;
 
     //admin user
+    @SuppressWarnings("unused")
     private it.water.core.api.model.User adminUser;
     private it.water.core.api.model.User companyManagerUser;
     private it.water.core.api.model.User companyViewerUser;

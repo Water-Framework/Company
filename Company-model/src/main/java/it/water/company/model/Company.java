@@ -2,7 +2,6 @@ package it.water.company.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonView;
-import it.water.core.api.entity.owned.OwnedResource;
 import it.water.core.api.entity.shared.SharedEntity;
 import it.water.core.api.permission.ProtectedEntity;
 import it.water.core.api.service.rest.WaterJsonView;
@@ -32,7 +31,7 @@ import lombok.*;
 @Getter
 @Setter(AccessLevel.PROTECTED)
 @ToString
-@EqualsAndHashCode(of = {"id","vatNumber"})
+@EqualsAndHashCode(callSuper = true, of = {"vatNumber"})
 //Actions and default roles access
 @AccessControl(availableActions = {CrudActions.SAVE, CrudActions.UPDATE, CrudActions.FIND, CrudActions.FIND_ALL, CrudActions.REMOVE},
         rolesPermissions = {

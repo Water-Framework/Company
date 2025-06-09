@@ -19,7 +19,7 @@ import org.slf4j.LoggerFactory;
  */
 @FrameworkRestController(referredRestApi = CompanyRestApi.class)
 public class CompanyRestControllerImpl extends BaseEntityRestApi<Company> implements CompanyRestApi {
-    @SuppressWarnings("java:S1068") //still mantain the variable even if not used
+    @SuppressWarnings({ "java:S1068", "unused" }) //still mantain the variable even if not used
     private static Logger log = LoggerFactory.getLogger(CompanyRestControllerImpl.class.getName());
 
     @Inject
