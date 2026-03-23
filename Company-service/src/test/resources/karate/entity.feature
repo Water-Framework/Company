@@ -34,7 +34,9 @@ Feature: Check Company Rest Api Response
         "city": 'city',
         "postalCode": 'postalCode',
         "nation": 'nation',
-        "vatNumber": 'vatNumber'
+        "vatNumber": 'vatNumber',
+        "categoryIds": #null,
+        "tagIds": #null
        }
     """
     * def entityId = response.id
@@ -72,10 +74,12 @@ Feature: Check Company Rest Api Response
         "city": 'city',
         "postalCode": 'postalCode',
         "nation": 'nation',
-        "vatNumber": 'vatNumber'
+        "vatNumber": 'vatNumber',
+        "categoryIds": #null,
+        "tagIds": #null
        }
     """
-  
+
   # --------------- FIND -----------------------------
 
     Given header Content-Type = 'application/json'
@@ -96,10 +100,12 @@ Feature: Check Company Rest Api Response
         "city": 'city',
         "postalCode": 'postalCode',
         "nation": 'nation',
-        "vatNumber": 'vatNumber'
+        "vatNumber": 'vatNumber',
+        "categoryIds": #null,
+        "tagIds": #null
        }
     """
-    
+
   # --------------- FIND ALL -----------------------------
 
     Given header Content-Type = 'application/json'
@@ -120,10 +126,12 @@ Feature: Check Company Rest Api Response
     "city": 'city',
     "postalCode": 'postalCode',
     "nation": 'nation',
-    "vatNumber": 'vatNumber'
+    "vatNumber": 'vatNumber',
+    "categoryIds": #null,
+    "tagIds": #null
     }
     """
-  
+
   # --------------- DELETE -----------------------------
 
     Given header Content-Type = 'application/json'
