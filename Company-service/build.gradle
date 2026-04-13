@@ -98,8 +98,11 @@ waterDescriptor {
     displayName = 'Company Service'
     description = 'Company entity management for multi-tenant Water Framework deployments'
 
-    input {
+    output {
         standardPin 'jdbc'
+    }
+
+    input {
         standardPin 'service-discovery'
     }
 }
